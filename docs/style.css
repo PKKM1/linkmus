@@ -62,6 +62,9 @@ body {
   width: 100%;
   max-width: 350px; /* Ограничивает ширину кнопки на больших экранах */
   margin: 0 auto; /* Центрирует кнопку */
+  opacity: 0; /* Начальная прозрачность */
+  transform: translateY(50px); /* Начальное смещение вниз */
+  transition: transform 0.4s ease, opacity 0.4s ease; /* Плавный переход */
 }
 
 .button img {
@@ -134,4 +137,19 @@ h2 {
 .verified-icon {
   width: 18px; /* Ширина кнопки */
   height: 18px;
+}
+
+.social-links .button:nth-child(1) {
+  transition-delay: 0.1s; /* Задержка для первой кнопки */
+}
+.social-links .button:nth-child(2) {
+  transition-delay: 0.2s; /* Задержка для второй кнопки */
+}
+.social-links .button:nth-child(3) {
+  transition-delay: 0.3s; /* Задержка для третьей кнопки */
+}
+
+.button.show {
+  transform: translateY(0); /* Конечное положение */
+  opacity: 1; /* Полная видимость */
 }
