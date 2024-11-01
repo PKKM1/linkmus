@@ -153,3 +153,8 @@ h2 {
   transform: translateY(0); /* Конечное положение */
   opacity: 1; /* Полная видимость */
 }
+
+.footer-button {
+  color: #bbb; /* Белый цвет текста */
+  text-decoration: none; /* Убирает подчёркивание */
+}
